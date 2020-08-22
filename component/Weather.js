@@ -52,7 +52,6 @@ const fontcolor = StyleSheet.create({
 });
 const styles = StyleSheet.create({
     backdrop: {
-        marginTop: 50,
         flexDirection: 'column',
         alignItems: 'center',
         width: '100%',
