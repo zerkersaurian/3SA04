@@ -2,17 +2,33 @@ import React,{ useState} from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 export default function Forecast(props) {
     return (
-    <View >
-        <Text style={fontcolor.backdrop}>{props.main}</Text>
-        <Text style={fontcolor.backdrop}>{props.description}</Text>
-        <Text style={fontcolor.backdrop}>{props.temp}</Text>
-        <Text style={fontcolor.backdrop}>°C</Text>
+    <View>
+        <Text style={mainfont.backdrop}>{props.main}</Text>
+        <Text></Text>
+        <Text style={descriptfont.backdrop}>{props.description}</Text>
+        <Text></Text>
+        <Text style={celciusfont.backdrop}>{props.temp} °C</Text>
     </View>
     );
 }
-const fontcolor = StyleSheet.create({
+const mainfont = StyleSheet.create({
     backdrop: {
         color: '#fff',
-        fontSize: 20,
+        fontSize: 35,
+        textAlign: 'center',
+    },
+});
+const descriptfont = StyleSheet.create({
+    backdrop: {
+        color: '#fff',
+        fontSize: 15,
+        textAlign: 'center',
+    },
+});
+const celciusfont = StyleSheet.create({
+    backdrop: {
+        color: '#fff',
+        fontSize: 30,
+        textAlign: 'center',
     },
 });
